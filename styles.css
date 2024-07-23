@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Roboto';
+    font-weight: 1000;
+}
+
+.calculator {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+}
+
+.calculator-screen {
+    width: 95%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 2.5em;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #d1d1d1;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(4px);
+}
+
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.operator:active {
+    background-color: #e08a00;
+}
+
+.all-clear {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.all-clear:active {
+    background-color: #d93025;
+}
+
+.equal-sign {
+    background-color: #4cd964;
+    color: white;
+    grid-column: span 2;
+}
+
+.equal-sign:active {
+    background-color: #43c854;
+}
